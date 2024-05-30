@@ -4,12 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DCA Courses Page</title>
+  <title>DCA Personality Test</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
-  <!--=============== SWIPER CSS ===============-->
-  <link rel="stylesheet" href="swiper-bundle.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -27,120 +25,10 @@
             <li class="nav-item">
               <a class="nav-link mx-2 active" aria-current="page" href="https://digitalcareers.academy/">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="https://digitalcareers.academy/about">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Courses
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li>
-                  <a class="dropdown-item" href="https://digitalcareers.academy/course-detail/agile-project-management/">Agile Project Manger</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="https://digitalcareers.academy/course-detail/scrum-master/">Business Analysis</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="https://digitalcareers.academy/course-detail/scrum-master/">Scrum Master</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="https://digitalcareers.academy/work-experience-program">Work Experience</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="https://digitalcareers.academy/course-detail/product-management/">Product Management</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="https://digitalcareers.academy/courses">View All</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="https://digitalcareers.academy/work-experience-program">Work Experience Program</a>
-            </li>
-            <li class="nav-item refer">
-              <a class="nav-link mx-2" href="https://digitalcareers.academy/courses/">Refer & Earn</a>
-              <img src="coin.png" />
-            </li>
-            <!-- <li class="nav-item dropdown">
-                            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Resources
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="faqs.html">FAQs</a></li>
-                                <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
-                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                            </ul>
-                        </li> -->
-            <!-- <li class="nav-item dropdown">
-                            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Company
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Blog</a></li>
-                                <li><a class="dropdown-item" href="#">About Us</a></li>
-                                <li><a class="dropdown-item" href="#">Contact us</a></li>
-                            </ul>
-                        </li> -->
-            <div class="border-left"></div>
-            <li class="nav-item">
-              <a class="nav-link mx-2" href="https://lms.digitalcareers.academy/sign-in/?next=/" target="_blank">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="mx-2 btn btn-trans" data-bs-toggle="modal" data-bs-target="#myModal">Free tech session</a>
-            </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- The Modal -->
-    <div class="modal" id="myModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title">Free Tech Sessions Form</h4>
-            <img src="times.png" alt="Close Btn" data-bs-dismiss="modal" />
-          </div>
-          <!-- Modal body -->
-          <div class="modal-body">
-            <div class="mb-3">
-              <input type="text" name="fullname" class="form-control" id="inputEmail" placeholder="Full name" />
-            </div>
-            <div class="mb-3">
-              <input type="email" name="email" class="form-control" id="inputPassword" placeholder="Email address" />
-            </div>
-            <div class="mb-3">
-              <input type="text" class="form-control" id="inputPassword" placeholder="Phone number" />
-            </div>
-            <div class="mb-3">
-              <select name="course" id="course" class="form-control">
-                <option value="program">Select program</option>
-                <option value="agile-project-manager">
-                  Agile Project Manger
-                </option>
-                <option value="business-analysis">Business Analysis</option>
-                <option value="scrum-master">Scrum Master</option>
-                <option value="work-experience">Work Experience</option>
-                <option value="product-management">Product Management</option>
-              </select>
-            </div>
-            <div class="mb-3">
-              <textarea name="message" class="form-control">
-Tell us what you're looking for</textarea>
-            </div>
-          </div>
-          <!-- Modal footer -->
-          <div class="modal-footer text-center w-100">
-            <button type="button" class="btn" data-bs-dismiss="modal">
-              Submit Request
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
   </header>
 
 <main class="py-5 container d-flex align-items-center justify-content-center">
