@@ -65,7 +65,8 @@ function sendVerificationCode(event) {
   storeDetailsInSession(userFirstNameInput, userLastNameInput, userEmailInput);
 
   // Validate user input
-  const emailPattern = /[a-zA-Z0-9._%+-]+@(gmail\.com|yahoo\.com)/;
+  const emailPattern =
+    /[a-zA-Z0-9._%+-]+@(gmail\.com|yahoo\.com|google\.com|outlook\.com|zoho\.com|hotmail\.com)/;
   if (!emailPattern.test(userEmailInput.value)) {
     alert("Please provide a valid Gmail or Yahoo address.");
     return;
