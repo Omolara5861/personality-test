@@ -64,14 +64,6 @@ function sendVerificationCode(event) {
 
   storeDetailsInSession(userFirstNameInput, userLastNameInput, userEmailInput);
 
-  // Validate user input
-  const emailPattern =
-    /[a-zA-Z0-9._%+-]+@(gmail\.com|yahoo\.com|google\.com|outlook\.com|zoho\.com|hotmail\.com)/;
-  if (!emailPattern.test(userEmailInput.value)) {
-    alert("Please provide a valid Gmail or Yahoo address.");
-    return;
-  }
-
   // Disable the submit button to prevent multiple submissions
   submitButton.disabled = true;
 
@@ -185,7 +177,6 @@ function verifyCode() {
     .then((response) => {
       console.log("Fetch response:", response);
       if (response.ok) {
-        alert("Verification successful!");
         window.location.href = "questions.html"; // Navigate to questions.html on success
       } else {
         alert(
