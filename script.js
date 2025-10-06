@@ -79,7 +79,7 @@ function sendVerificationCode(event) {
   };
 
   fetch(
-    "https://dca-server-jwcj.onrender.com/sendVerificationCode",
+    "https://personality-test-server.onrender.com/sendVerificationCode",
     requestOptions
   )
     .then((response) => {
@@ -123,7 +123,7 @@ function resendVerificationCode() {
   };
 
   fetch(
-    "https://dca-server-jwcj.onrender.com/resendVerificationCode",
+    "https://personality-test-server.onrender.com/resendVerificationCode",
     requestOptions
   )
     .then((response) => {
@@ -173,7 +173,7 @@ function verifyCode() {
   console.log("Request Options:", requestOptions);
 
   // Testing fetch call
-  fetch("https://dca-server-jwcj.onrender.com/verifyCode", requestOptions)
+  fetch("https://personality-test-server.onrender.com/verifyCode", requestOptions)
     .then((response) => {
       console.log("Fetch response:", response);
       if (response.ok) {
