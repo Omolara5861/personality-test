@@ -79,7 +79,7 @@ function sendVerificationCode(event) {
   };
 
   fetch(
-    "https://personality-test-server.onrender.com/sendVerificationCode",
+    "https://api.afrieta.com/email/sendVerificationCode",
     requestOptions
   )
     .then((response) => {
@@ -123,7 +123,7 @@ function resendVerificationCode() {
   };
 
   fetch(
-    "https://personality-test-server.onrender.com/resendVerificationCode",
+    "https://api.afrieta.com/email/resendVerificationCode",
     requestOptions
   )
     .then((response) => {
@@ -173,7 +173,7 @@ function verifyCode() {
   console.log("Request Options:", requestOptions);
 
   // Testing fetch call
-  fetch("https://personality-test-server.onrender.com/verifyCode", requestOptions)
+  fetch("https://api.afrieta.com/email/verifyCode", requestOptions)
     .then((response) => {
       console.log("Fetch response:", response);
       if (response.ok) {
